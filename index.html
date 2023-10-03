@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+    <!-- Using 'defer', when browser is parsing, it will look at defer scripts and start downloading and immediately
+        continue parsing the rest of the file. It will defer EXECUTING the script until it has finished parsing.
+
+        Using 'async', the browser will also start downloading the script and move on with partsing the HTML, 
+        BUT it will execute the script as soon as the script downloads, and only resume the parsing until the script has finished executing.
+     -->
+    <script src="app.js" type="module" defer></script>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="app.webmanifest">
     <link rel="apple-touch-icon" href="images/icons/icon.png">
